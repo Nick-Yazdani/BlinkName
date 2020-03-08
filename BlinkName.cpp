@@ -1,5 +1,5 @@
 int led = D7;
-char myMorse[] = {'-', '.', '-', '-', '.', '-', '-', '-','.','.','.','-','-','.','.','.'};
+char myMorse[] = {'-', '.', '.', '.', '-', '.', '-', '.', '-', '.', '-'};
 
 void longSequence()
 {
@@ -24,8 +24,8 @@ void setup() {
 
 void loop() {
  
-  //so for the name Yazdani we need:
-  //-.-- .- --.. -.. .- -. ..
+  //so for the name Nick we need:
+  //-. .. -.-. -.-
   for(int i = 0; i < sizeof(myMorse)/sizeof(myMorse[0]); i++)
   {
       if(myMorse[i] == '-')
